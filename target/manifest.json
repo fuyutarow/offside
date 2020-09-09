@@ -1,0 +1,19 @@
+{
+  "name": "offside",
+  "version": "0.202009.0",
+  "description": "play in an offside position",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.nikkei.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
