@@ -1,11 +1,13 @@
 {
   "name": "offside",
-  "version": "0.202009.0",
+  "version": "0.2022.3",
   "description": "play in an offside position",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "content_scripts": [
     {
+      "run_at": "document_idle",
       "matches": [
+        "*://*.slideshare.net/*",
         "https://*.nikkei.com/*"
       ],
       "js": [
@@ -13,7 +15,5 @@
       ]
     }
   ],
-  "permissions": [
-    "activeTab"
-  ]
+  "permissions": []
 }
